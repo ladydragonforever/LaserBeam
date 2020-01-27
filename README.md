@@ -18,6 +18,9 @@ With LazerBeam, users will be able to:
  
 ## WireFrames
   
+  Here is a hight-level diagram of the final project that should look like:
+  
+  ![alt text](https://github.com/ladydragonforever/LaserBeam/blob/master/LazerBeam.drawio)
   
 ## Architecture and Technologies
  LaserBeam is a frontend Javascript project. The main technologies used are :

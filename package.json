@@ -1,0 +1,19 @@
+{
+  "name": "LaserBeam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "d3-force": "^2.0.1",
+    "d3-hierarchy": "^1.1.9",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "webpack --watch --mode=development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

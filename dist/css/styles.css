@@ -66,12 +66,26 @@ h1 {
   text-align: center;
 } 
 
+#filter {
+  color: black;
+}
+
 #barChart {
   margin-top: 20px;
   color: white;
 }
 
+#network-graph {
+  margin-top: 20px;
+}
+
 .g_main {
   cursor:pointer;
   pointer-events: all;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }

@@ -93,6 +93,28 @@ const dataNodes = {
     ]
     
 }
+
+// filter
+const filterWidth = 500, filterHeight = 300;
+
+const form = d3.select('#filter').append('form')
+                .attr('width', filterWidth)
+                .attr('height', filterHeight)
+
+const companies = Object.keys(inputNodes);
+const labels = form
+    .attr('class', 'filter-form')
+    .selectAll("label")
+    .data(companies)
+    .enter()
+    .append("label").attr("id", function (d) { return d.replace(/ /g, '').replace(/,/g, "") + "ID"; })
+    .text(function (d) { return d; })
+    .append("input")
+    .attr("type", "checkbox")
+    .attr("checked", true)
+    .attr('class', "checkbox")
+
+
 // console.log(dataNodes)
 
 function getNodeColor(node) {
@@ -231,7 +253,7 @@ const node = svg2.append("g")
     // })
     .on('mouseover', function (d, i) {
         const mouseNode = d3.select(this);
-        console.log("mousenode",mouseNode.parent)
+        // console.log("mousenode",mouseNode.parent)
         d3.selectAll("circle").style('opacity', getOpacity);
         d3.selectAll('text').style('opacity', d=> {
         

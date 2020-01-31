@@ -2,6 +2,23 @@
 import {cnn, google, yahoo} from "./data";
 
 
+//helper functions 
+function getNodeColor(node) {
+    return node.level === 1 ? 'black' : "gray"
+}
+
+function getNodeSize(node) {
+    return node.level === 1 ? "10" : "5"
+}
+
+function getName(node) {
+    return node.name
+}
+
+function getOpacity(node) {
+    return node.level === 1 ? 1 : 1
+}
+
 
 // Data formatting into Nodes and Links
 const transformData = (data) => (data.map(el => (
@@ -36,7 +53,111 @@ let inputNodes = {
     "CNN": cnnData,
     "Yahoo": yahooData,
 }
+const companies = Object.keys(inputNodes);
 
+// filter
+
+// D3 for creating form with checkboxes
+
+// const filterWidth = 500, filterHeight = 300;
+
+// const form = d3.select('#filter').append('form')
+//                 .attr('width', filterWidth)
+//                 .attr('height', filterHeight)
+
+// const labels = form
+//     .attr('class', 'filter-form')
+//     .selectAll("label")
+//     .data(companies)
+//     .enter()
+//     .append("label")
+//     .text(function (d) { return d; })
+//     .append("input").attr("id", function (d) { return d.replace(/ /g, '').replace(/,/g, ""); })
+//     .attr("type", "checkbox")
+//     .attr("checked", true)
+//     .attr('class', "checkbox")
+
+// vanilla js for creating form with checkboxes
+const formTag = document.createElement("form")
+formTag.setAttribute("class", 'filter-form')
+
+for (let i = 0; i < companies.length; i++) {
+    const idName = companies[i];
+    const labelTag = document.createElement('label');
+    labelTag.innerText = idName;
+    formTag.appendChild(labelTag);
+    const inputTag = document.createElement('input');
+    inputTag.setAttribute('type', "checkbox");
+    inputTag.setAttribute('id', idName);
+    inputTag.setAttribute('class', "checkboxes")
+    inputTag.setAttribute('checked', true);
+    labelTag.appendChild(inputTag);
+}
+
+const form = document.getElementById('filter').appendChild(formTag)
+    
+// vanilla js for selecting and unselecting all
+const selectButton = document.getElementsByClassName('select-all')
+const selectAllFilter = () => {
+    if (selectButton[0].value === "Select All") {
+        for (const company of companies) {
+            document.getElementById(`${company}`).checked = true;
+        }
+        selectButton[0].value = "Unselect";
+
+    } else {
+        for (const company of companies) {
+            document.getElementById(`${company}`).checked = false;
+        }
+        selectButton[0].value = "Select All";
+        // filteredInput = {}
+        // console.log(filteredInput)
+    }
+}
+const updateAll = () => {
+    console.log(selectButton[0].value)
+    let newVisibility = selectButton[0].value === "Unselect" ? "visible" : "hidden"
+    d3.selectAll("line").attr("visibility", function(d) {return newVisibility})
+    d3.selectAll("circle").attr("visibility", d => {return newVisibility})     
+}
+// add eventlistner for the selectAll button
+selectButton[0].addEventListener('click', selectAllFilter)
+selectButton[0].addEventListener('click', updateAll)
+// add evenlistner for each checkbox
+const checkboxes = document.getElementsByClassName("checkboxes")
+
+const updateData = (company) => {
+    // console.log(company)
+        let newVisibility = document.getElementById(company).checked ? "visible" : "hidden";
+    
+        d3.selectAll("line").attr("visibility",
+        
+            function (d) {
+                if (d.source.name === company) {
+                    return newVisibility;
+                } else {
+                    return d3.select(this).attr("visibility")
+                }
+            });        
+        d3.selectAll("circle").attr("visibility",
+            function (d) {
+                if (!d.groups.includes(company)) { 
+                    return d3.select(this).attr("visibility"); 
+                } else {    
+                    return newVisibility;
+                }
+            });
+}
+
+for (const checkbox of checkboxes) {
+    checkbox.addEventListener('change', ()=>updateData(checkbox.id))
+    
+}
+
+
+
+// console.log(filteredInput)
+    // 
 let mergedNodes = {};
 
 
@@ -56,34 +177,29 @@ let mergedDataNodes = Object.keys(mergedNodes).map( key => {
     }
 });
 
-
-console.log(mergedDataNodes);
-
-
 const dataNodes = {
     nodes: [
          
         {
             id: "Google",
             name: "Google",
-            level: 1
+            level: 1,
+            groups: ["Google"]
         },
         {
             id:"CNN",
             name: "CNN",
-            level: 1
+            level: 1,
+            groups: ["CNN"]
         },
         {
             id: "Yahoo",
             name: "Yahoo",
-            level: 1
+            level: 1,
+            groups: ["Yahoo"]
         },
         ...mergedDataNodes
-        // ...googleDataNodes,
-        // ...cnnDataNodes,
-        // ...yahooDataNodes
 
-      
     ],
     links: [
         ...googleDataLinks,
@@ -94,68 +210,9 @@ const dataNodes = {
     
 }
 
-// filter
-const filterWidth = 500, filterHeight = 300;
-
-const form = d3.select('#filter').append('form')
-                .attr('width', filterWidth)
-                .attr('height', filterHeight)
-
-const companies = Object.keys(inputNodes);
-const labels = form
-    .attr('class', 'filter-form')
-    .selectAll("label")
-    .data(companies)
-    .enter()
-    .append("label").attr("id", function (d) { return d.replace(/ /g, '').replace(/,/g, "") + "ID"; })
-    .text(function (d) { return d; })
-    .append("input")
-    .attr("type", "checkbox")
-    .attr("checked", true)
-    .attr('class', "checkbox")
 
 
-// console.log(dataNodes)
 
-function getNodeColor(node) {
-    return node.level === 1 ? 'black' : "gray"
-}
-
-function getNodeSize(node) {
-    return node.level === 1? "10" : "5"
-}
-
-function getLinkColor(link) {
-    return randomItem(['green', 'blue', randomColor()]);
-}
-
-function getName(node) {
-     return node.name
-}
-
-function getOpacity(node) {
-    return node.level === 1 ? 1 : 1
-}
-// function getText(node) {
-//     // console.log("getText", node);
-//    return d3.select(this)
-//         .transition()
-//         .attr('opacity', .5);
-// }
-// const color = d3.scaleOrdinal(d3.schemeCategory10);
-// Random color
-
-function randomItem(items) {
-    return items[Math.floor(Math.random() * items.length)];
-}
-
-function randomColor() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    // return "rgb(" + x + "," + y + "," + z + ")";
-    return `rgb(${x},${y},${z})`;
-}
 
 // create a bar chart
 // to change the data
@@ -193,7 +250,7 @@ const netWidth = 500, netHeight = 300;
 
 const links = dataNodes.links.map(d => Object.create(d));
 
-console.log("links", links)
+// console.log("links", links)
 
 const nodes = dataNodes.nodes.map(d => Object.create(d));
 
@@ -241,7 +298,6 @@ const node = svg2.append("g")
     .enter().append('circle')
       .attr("r", getNodeSize)
       .attr('fill', getNodeColor)
-      .text("testing")
       
     // .on('click', function (d, i) {
     //     console.log("clicking on", this);

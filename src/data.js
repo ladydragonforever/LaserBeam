@@ -1,4 +1,2757 @@
-
+export const Twitter = [
+    {
+        "contentType": "",
+        "mimeType": "Unknown",
+        "id": 0,
+        "url": "\/",
+        "host": "www.twitter.com",
+        "full_url": "https:\/\/www.twitter.com\/",
+        "objectSize": 0,
+        "ttfb_ms": 54,
+        "load_ms": 54,
+        "responseCode": 301,
+        "download_start": 203,
+        "download_end": 203,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/web\/main.d4843a24.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "www.twitter.com",
+            "category": "Unknown"
+        }
+    },
+    {
+        "contentType": "text\/html",
+        "mimeType": "HTML",
+        "id": 1,
+        "url": "\/",
+        "host": "twitter.com",
+        "full_url": "https:\/\/twitter.com\/",
+        "objectSize": 12595,
+        "ttfb_ms": 124,
+        "load_ms": 173,
+        "responseCode": 200,
+        "download_start": 331,
+        "download_end": 380,
+        "initiator": {
+            "url": "https:\/\/www.twitter.com\/",
+            "type": "redirect"
+        },
+        "thirdparty": {
+            "name": "twitter.com",
+            "company": "Unknown",
+            "category": "twitter.com"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 2,
+        "url": "\/responsive-web\/web\/polyfills.a0d464b4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/polyfills.a0d464b4.js",
+        "objectSize": 15896,
+        "ttfb_ms": 274,
+        "load_ms": 308,
+        "responseCode": 200,
+        "download_start": 855,
+        "download_end": 889,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "parser"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 3,
+        "url": "\/responsive-web\/web\/main.d4843a24.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/main.d4843a24.js",
+        "objectSize": 179940,
+        "ttfb_ms": 49,
+        "load_ms": 382,
+        "responseCode": 200,
+        "download_start": 630,
+        "download_end": 963,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "parser"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 4,
+        "url": "\/responsive-web\/web\/i18n-horizon\/en.ffd5aad4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/i18n-horizon\/en.ffd5aad4.js",
+        "objectSize": 4972,
+        "ttfb_ms": 273,
+        "load_ms": 392,
+        "responseCode": 200,
+        "download_start": 854,
+        "download_end": 973,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "parser"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 5,
+        "url": "\/responsive-web\/web\/i18n-rweb\/en.c558e804.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/i18n-rweb\/en.c558e804.js",
+        "objectSize": 36752,
+        "ttfb_ms": 275,
+        "load_ms": 455,
+        "responseCode": 200,
+        "download_start": 856,
+        "download_end": 1036,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "parser"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 6,
+        "url": "\/responsive-web\/web\/vendors~main.d4bb44a4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/vendors~main.d4bb44a4.js",
+        "objectSize": 146244,
+        "ttfb_ms": 276,
+        "load_ms": 697,
+        "responseCode": 200,
+        "download_start": 857,
+        "download_end": 1278,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "parser"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/manifest+json",
+        "mimeType": "JSON",
+        "id": 7,
+        "url": "\/manifest.json",
+        "host": "twitter.com",
+        "full_url": "https:\/\/twitter.com\/manifest.json",
+        "objectSize": 653,
+        "ttfb_ms": 57,
+        "load_ms": 59,
+        "responseCode": 200,
+        "download_start": 1646,
+        "download_end": 1648,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "other"
+        },
+        "thirdparty": {
+            "name": "twitter.com",
+            "company": "Unknown",
+            "category": "twitter.com"
+        }
+    },
+    {
+        "contentType": "image\/vnd.microsoft.icon",
+        "mimeType": "Image",
+        "id": 8,
+        "url": "\/favicons\/twitter.ico",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/favicons\/twitter.ico",
+        "objectSize": 912,
+        "ttfb_ms": 41,
+        "load_ms": 42,
+        "responseCode": 200,
+        "download_start": 1631,
+        "download_end": 1632,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "other"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 9,
+        "url": "\/responsive-web\/web\/shared~bundle.HomeTimeline.a519c694.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/shared~bundle.HomeTimeline.a519c694.js",
+        "objectSize": 199397,
+        "ttfb_ms": 36,
+        "load_ms": 472,
+        "responseCode": 200,
+        "download_start": 1724,
+        "download_end": 2160,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 10,
+        "url": "\/responsive-web\/web\/shared~bundle.DirectMessages.c75d4354.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/shared~bundle.DirectMessages.c75d4354.js",
+        "objectSize": 34269,
+        "ttfb_ms": 339,
+        "load_ms": 531,
+        "responseCode": 200,
+        "download_start": 2030,
+        "download_end": 2222,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 11,
+        "url": "\/responsive-web\/web\/shared~bundle.Settings.b25d59c4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/shared~bundle.Settings.b25d59c4.js",
+        "objectSize": 8468,
+        "ttfb_ms": 340,
+        "load_ms": 537,
+        "responseCode": 200,
+        "download_start": 2031,
+        "download_end": 2228,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 12,
+        "url": "\/responsive-web\/web\/loader.Typeahead.9f6ef654.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.Typeahead.9f6ef654.js",
+        "objectSize": 21298,
+        "ttfb_ms": 340,
+        "load_ms": 581,
+        "responseCode": 200,
+        "download_start": 2031,
+        "download_end": 2272,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 13,
+        "url": "\/responsive-web\/web\/bundle.LoggedOutHome.7fba7ef4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.LoggedOutHome.7fba7ef4.js",
+        "objectSize": 4545,
+        "ttfb_ms": 306,
+        "load_ms": 553,
+        "responseCode": 200,
+        "download_start": 2032,
+        "download_end": 2279,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 14,
+        "url": "\/responsive-web\/web\/loader.AppModules.381cdbc4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.AppModules.381cdbc4.js",
+        "objectSize": 15468,
+        "ttfb_ms": 288,
+        "load_ms": 572,
+        "responseCode": 200,
+        "download_start": 2034,
+        "download_end": 2318,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/json",
+        "mimeType": "JSON",
+        "id": 15,
+        "url": "\/hashflag\/config-2020-01-31-23.json",
+        "host": "pbs.twimg.com",
+        "full_url": "https:\/\/pbs.twimg.com\/hashflag\/config-2020-01-31-23.json",
+        "objectSize": 50445,
+        "ttfb_ms": 90,
+        "load_ms": 174,
+        "responseCode": 200,
+        "download_start": 1840,
+        "download_end": 1924,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/web\/main.d4843a24.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 16,
+        "url": "\/responsive-web\/web\/bundle.NetworkInstrument.7b75a6f4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.NetworkInstrument.7b75a6f4.js",
+        "objectSize": 1980,
+        "ttfb_ms": 554,
+        "load_ms": 559,
+        "responseCode": 200,
+        "download_start": 2320,
+        "download_end": 2325,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "image\/png",
+        "mimeType": "Image",
+        "id": 17,
+        "url": "\/responsive-web\/web\/icon-default.3c3b2244.png",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/icon-default.3c3b2244.png",
+        "objectSize": 4035,
+        "ttfb_ms": 530,
+        "load_ms": 532,
+        "responseCode": 200,
+        "download_start": 2322,
+        "download_end": 2324,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "other"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 18,
+        "url": "\/sw.js",
+        "host": "twitter.com",
+        "full_url": "https:\/\/twitter.com\/sw.js",
+        "objectSize": 2919,
+        "ttfb_ms": 302,
+        "load_ms": 310,
+        "responseCode": 200,
+        "download_start": 2117,
+        "download_end": 2125,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/sw.js",
+            "type": "other"
+        },
+        "thirdparty": {
+            "name": "twitter.com",
+            "company": "Unknown",
+            "category": "twitter.com"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 19,
+        "url": "\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+        "objectSize": 43622,
+        "ttfb_ms": 195,
+        "load_ms": 259,
+        "responseCode": 200,
+        "download_start": 2326,
+        "download_end": 2390,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/sw.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "",
+        "mimeType": "Unknown",
+        "id": 20,
+        "url": "\/graphql\/eONM6S5xvkAADBbwIGt9IA\/Viewer?variables=%7B%22withHighlightedLabel%22%3Afalse%7D",
+        "host": "api.twitter.com",
+        "full_url": "https:\/\/api.twitter.com\/graphql\/eONM6S5xvkAADBbwIGt9IA\/Viewer?variables=%7B%22withHighlightedLabel%22%3Afalse%7D",
+        "objectSize": 0,
+        "ttfb_ms": 141,
+        "load_ms": 141,
+        "responseCode": 200,
+        "download_start": 2398,
+        "download_end": 2398,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/web\/main.d4843a24.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "api.twitter.com",
+            "category": "Unknown"
+        }
+    },
+    {
+        "contentType": "",
+        "mimeType": "Unknown",
+        "id": 21,
+        "url": "\/1.1\/jot\/client_event.json",
+        "host": "api.twitter.com",
+        "full_url": "https:\/\/api.twitter.com\/1.1\/jot\/client_event.json",
+        "objectSize": 0,
+        "ttfb_ms": 142,
+        "load_ms": 142,
+        "responseCode": 200,
+        "download_start": 2399,
+        "download_end": 2399,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/web\/main.d4843a24.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "api.twitter.com",
+            "category": "Unknown"
+        }
+    },
+    {
+        "contentType": "",
+        "mimeType": "Unknown",
+        "id": 22,
+        "url": "\/1.1\/jot\/client_event.json",
+        "host": "api.twitter.com",
+        "full_url": "https:\/\/api.twitter.com\/1.1\/jot\/client_event.json",
+        "objectSize": 0,
+        "ttfb_ms": 143,
+        "load_ms": 143,
+        "responseCode": 200,
+        "download_start": 2400,
+        "download_end": 2400,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/web\/main.d4843a24.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "api.twitter.com",
+            "category": "Unknown"
+        }
+    },
+    {
+        "contentType": "text\/javascript",
+        "mimeType": "Javascript",
+        "id": 23,
+        "url": "\/i\/js_inst?c_name=ui_metrics",
+        "host": "twitter.com",
+        "full_url": "https:\/\/twitter.com\/i\/js_inst?c_name=ui_metrics",
+        "objectSize": 2369,
+        "ttfb_ms": 59,
+        "load_ms": 60,
+        "responseCode": 200,
+        "download_start": 2496,
+        "download_end": 2497,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/web\/shared~bundle.HomeTimeline.a519c694.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "twitter.com",
+            "company": "Unknown",
+            "category": "twitter.com"
+        }
+    },
+    {
+        "contentType": "application\/json",
+        "mimeType": "JSON",
+        "id": 24,
+        "url": "\/graphql\/eONM6S5xvkAADBbwIGt9IA\/Viewer?variables=%7B%22withHighlightedLabel%22%3Afalse%7D",
+        "host": "api.twitter.com",
+        "full_url": "https:\/\/api.twitter.com\/graphql\/eONM6S5xvkAADBbwIGt9IA\/Viewer?variables=%7B%22withHighlightedLabel%22%3Afalse%7D",
+        "objectSize": 229,
+        "ttfb_ms": 76,
+        "load_ms": 77,
+        "responseCode": 200,
+        "download_start": 2575,
+        "download_end": 2576,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "other"
+        },
+        "thirdparty": {
+            "name": "api.twitter.com",
+            "category": "Unknown"
+        }
+    },
+    {
+        "contentType": "",
+        "mimeType": "Unknown",
+        "id": 25,
+        "url": "\/1.1\/jot\/client_event.json",
+        "host": "api.twitter.com",
+        "full_url": "https:\/\/api.twitter.com\/1.1\/jot\/client_event.json",
+        "objectSize": 0,
+        "ttfb_ms": 69,
+        "load_ms": 69,
+        "responseCode": 200,
+        "download_start": 2572,
+        "download_end": 2572,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "other"
+        },
+        "thirdparty": {
+            "name": "api.twitter.com",
+            "category": "Unknown"
+        }
+    },
+    {
+        "contentType": "",
+        "mimeType": "Unknown",
+        "id": 26,
+        "url": "\/1.1\/jot\/client_event.json",
+        "host": "api.twitter.com",
+        "full_url": "https:\/\/api.twitter.com\/1.1\/jot\/client_event.json",
+        "objectSize": 0,
+        "ttfb_ms": 76,
+        "load_ms": 76,
+        "responseCode": 200,
+        "download_start": 2582,
+        "download_end": 2582,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "other"
+        },
+        "thirdparty": {
+            "name": "api.twitter.com",
+            "category": "Unknown"
+        }
+    },
+    {
+        "contentType": "text\/html",
+        "mimeType": "HTML",
+        "id": 27,
+        "url": "\/home?precache=1",
+        "host": "twitter.com",
+        "full_url": "https:\/\/twitter.com\/home?precache=1",
+        "objectSize": 12542,
+        "ttfb_ms": 88,
+        "load_ms": 109,
+        "responseCode": 200,
+        "download_start": 2624,
+        "download_end": 2645,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "twitter.com",
+            "company": "Unknown",
+            "category": "twitter.com"
+        }
+    },
+    {
+        "contentType": "text\/javascript",
+        "mimeType": "Javascript",
+        "id": 28,
+        "url": "\/analytics.js",
+        "host": "www.google-analytics.com",
+        "full_url": "https:\/\/www.google-analytics.com\/analytics.js",
+        "objectSize": 17926,
+        "ttfb_ms": 36,
+        "load_ms": 67,
+        "responseCode": 200,
+        "download_start": 2692,
+        "download_end": 2723,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/web\/main.d4843a24.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Google Analytics",
+            "company": "Google",
+            "category": "Analytics"
+        }
+    },
+    {
+        "contentType": "image\/gif",
+        "mimeType": "Image",
+        "id": 29,
+        "url": "\/r\/collect?v=1&_v=j80&aip=1&a=974681188&t=pageview&_s=1&dl=https%3A%2F%2Ftwitter.com%2F&dp=%2Fanon%2Ffront%2F&ul=en-us&de=UTF-8&dt=IGNORED&sd=24-bit&sr=1920x1200&vp=1009x652&je=0&_u=YEBAAUAB~&jid=1767838965&gjid=830713285&cid=769493234.1580514636&tid=UA-30775-67&_gid=636523081.1580514636&_r=1&z=441081876",
+        "host": "www.google-analytics.com",
+        "full_url": "https:\/\/www.google-analytics.com\/r\/collect?v=1&_v=j80&aip=1&a=974681188&t=pageview&_s=1&dl=https%3A%2F%2Ftwitter.com%2F&dp=%2Fanon%2Ffront%2F&ul=en-us&de=UTF-8&dt=IGNORED&sd=24-bit&sr=1920x1200&vp=1009x652&je=0&_u=YEBAAUAB~&jid=1767838965&gjid=830713285&cid=769493234.1580514636&tid=UA-30775-67&_gid=636523081.1580514636&_r=1&z=441081876",
+        "objectSize": 35,
+        "ttfb_ms": 80,
+        "load_ms": 81,
+        "responseCode": 200,
+        "download_start": 2843,
+        "download_end": 2844,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "other"
+        },
+        "thirdparty": {
+            "name": "Google Analytics",
+            "company": "Google",
+            "category": "Analytics"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 30,
+        "url": "\/responsive-web\/web\/ondemand.BranchSdk.95b9ff34.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/ondemand.BranchSdk.95b9ff34.js",
+        "objectSize": 22017,
+        "ttfb_ms": 36,
+        "load_ms": 72,
+        "responseCode": 200,
+        "download_start": 2807,
+        "download_end": 2843,
+        "initiator": {
+            "url": "https:\/\/twitter.com\/",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 31,
+        "url": "\/responsive-web\/web\/shared~bundle.UserProfile.6e8fc134.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/shared~bundle.UserProfile.6e8fc134.js",
+        "objectSize": 5738,
+        "ttfb_ms": 40,
+        "load_ms": 48,
+        "responseCode": 200,
+        "download_start": 2990,
+        "download_end": 2998,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 32,
+        "url": "\/responsive-web\/web\/bundle.NewsCameraCapsule~loader.NewsCamera~ondemand.VideoPlayerDefaultUI.54b8a934.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.NewsCameraCapsule~loader.NewsCamera~ondemand.VideoPlayerDefaultUI.54b8a934.js",
+        "objectSize": 6880,
+        "ttfb_ms": 43,
+        "load_ms": 46,
+        "responseCode": 200,
+        "download_start": 3069,
+        "download_end": 3072,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 33,
+        "url": "\/responsive-web\/web\/bundle.Conversation~bundle.TweetMediaDetail.ee108d24.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Conversation~bundle.TweetMediaDetail.ee108d24.js",
+        "objectSize": 4062,
+        "ttfb_ms": 34,
+        "load_ms": 38,
+        "responseCode": 200,
+        "download_start": 3119,
+        "download_end": 3123,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 34,
+        "url": "\/responsive-web\/web\/bundle.Display~bundle.Settings.aa73ca84.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Display~bundle.Settings.aa73ca84.js",
+        "objectSize": 4747,
+        "ttfb_ms": 39,
+        "load_ms": 40,
+        "responseCode": 200,
+        "download_start": 3174,
+        "download_end": 3175,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 35,
+        "url": "\/responsive-web\/web\/bundle.GenericTimeline.f4e41664.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.GenericTimeline.f4e41664.js",
+        "objectSize": 6959,
+        "ttfb_ms": 33,
+        "load_ms": 43,
+        "responseCode": 200,
+        "download_start": 3225,
+        "download_end": 3235,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 36,
+        "url": "\/responsive-web\/web\/bundle.LiveEvent~bundle.Moment.d90baab4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.LiveEvent~bundle.Moment.d90baab4.js",
+        "objectSize": 5605,
+        "ttfb_ms": 36,
+        "load_ms": 43,
+        "responseCode": 200,
+        "download_start": 3281,
+        "download_end": 3288,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 37,
+        "url": "\/responsive-web\/web\/bundle.NewsCameraCapsule~loader.NewsCamera.14a57924.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.NewsCameraCapsule~loader.NewsCamera.14a57924.js",
+        "objectSize": 9044,
+        "ttfb_ms": 44,
+        "load_ms": 47,
+        "responseCode": 200,
+        "download_start": 3344,
+        "download_end": 3347,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 38,
+        "url": "\/responsive-web\/web\/vendors~ondemand.TweetDeckRichTextCompose~bundle.DMRichTextCompose.9e4aec54.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/vendors~ondemand.TweetDeckRichTextCompose~bundle.DMRichTextCompose.9e4aec54.js",
+        "objectSize": 9120,
+        "ttfb_ms": 42,
+        "load_ms": 53,
+        "responseCode": 200,
+        "download_start": 3404,
+        "download_end": 3415,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 39,
+        "url": "\/responsive-web\/web\/bundle.AboutThisAd.12ded464.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.AboutThisAd.12ded464.js",
+        "objectSize": 1393,
+        "ttfb_ms": 34,
+        "load_ms": 35,
+        "responseCode": 200,
+        "download_start": 3462,
+        "download_end": 3463,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 40,
+        "url": "\/responsive-web\/web\/bundle.Account.5976fbd4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Account.5976fbd4.js",
+        "objectSize": 10434,
+        "ttfb_ms": 47,
+        "load_ms": 50,
+        "responseCode": 200,
+        "download_start": 3519,
+        "download_end": 3522,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 41,
+        "url": "\/responsive-web\/web\/bundle.AdvancedSearch.c90bbfa4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.AdvancedSearch.c90bbfa4.js",
+        "objectSize": 5413,
+        "ttfb_ms": 41,
+        "load_ms": 43,
+        "responseCode": 200,
+        "download_start": 3580,
+        "download_end": 3582,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 42,
+        "url": "\/responsive-web\/web\/bundle.Bookmarks.65f3ce84.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Bookmarks.65f3ce84.js",
+        "objectSize": 1338,
+        "ttfb_ms": 34,
+        "load_ms": 36,
+        "responseCode": 200,
+        "download_start": 3632,
+        "download_end": 3634,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 43,
+        "url": "\/responsive-web\/web\/bundle.Broadcast.e7a46844.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Broadcast.e7a46844.js",
+        "objectSize": 3406,
+        "ttfb_ms": 35,
+        "load_ms": 38,
+        "responseCode": 200,
+        "download_start": 3677,
+        "download_end": 3680,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 44,
+        "url": "\/responsive-web\/web\/bundle.Collection.39b015c4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Collection.39b015c4.js",
+        "objectSize": 1697,
+        "ttfb_ms": 36,
+        "load_ms": 37,
+        "responseCode": 200,
+        "download_start": 3728,
+        "download_end": 3729,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 45,
+        "url": "\/responsive-web\/web\/bundle.Compose.7e70b644.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Compose.7e70b644.js",
+        "objectSize": 25497,
+        "ttfb_ms": 47,
+        "load_ms": 76,
+        "responseCode": 200,
+        "download_start": 3785,
+        "download_end": 3814,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 46,
+        "url": "\/responsive-web\/web\/bundle.ComposeMedia.a24e3e64.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.ComposeMedia.a24e3e64.js",
+        "objectSize": 10370,
+        "ttfb_ms": 61,
+        "load_ms": 75,
+        "responseCode": 200,
+        "download_start": 3909,
+        "download_end": 3923,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 47,
+        "url": "\/responsive-web\/web\/bundle.ConnectTab.3b200534.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.ConnectTab.3b200534.js",
+        "objectSize": 1263,
+        "ttfb_ms": 35,
+        "load_ms": 38,
+        "responseCode": 200,
+        "download_start": 3989,
+        "download_end": 3992,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 48,
+        "url": "\/responsive-web\/web\/bundle.Conversation.1e66aa74.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Conversation.1e66aa74.js",
+        "objectSize": 6284,
+        "ttfb_ms": 31,
+        "load_ms": 40,
+        "responseCode": 200,
+        "download_start": 4032,
+        "download_end": 4041,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 49,
+        "url": "\/responsive-web\/web\/bundle.ConversationParticipants.cf76dff4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.ConversationParticipants.cf76dff4.js",
+        "objectSize": 1296,
+        "ttfb_ms": 33,
+        "load_ms": 34,
+        "responseCode": 200,
+        "download_start": 4086,
+        "download_end": 4087,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 50,
+        "url": "\/responsive-web\/web\/bundle.DMRichTextCompose.5fb00474.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.DMRichTextCompose.5fb00474.js",
+        "objectSize": 94949,
+        "ttfb_ms": 34,
+        "load_ms": 192,
+        "responseCode": 200,
+        "download_start": 4128,
+        "download_end": 4286,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 51,
+        "url": "\/responsive-web\/web\/bundle.DirectMessages.bf67d0e4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.DirectMessages.bf67d0e4.js",
+        "objectSize": 56366,
+        "ttfb_ms": 39,
+        "load_ms": 128,
+        "responseCode": 200,
+        "download_start": 4427,
+        "download_end": 4516,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 52,
+        "url": "\/responsive-web\/web\/bundle.Display.ba471eb4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Display.ba471eb4.js",
+        "objectSize": 1299,
+        "ttfb_ms": 34,
+        "load_ms": 35,
+        "responseCode": 200,
+        "download_start": 4605,
+        "download_end": 4606,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 53,
+        "url": "\/responsive-web\/web\/bundle.Download.6b946cf4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Download.6b946cf4.js",
+        "objectSize": 1490,
+        "ttfb_ms": 32,
+        "load_ms": 33,
+        "responseCode": 200,
+        "download_start": 4647,
+        "download_end": 4648,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 54,
+        "url": "\/responsive-web\/web\/bundle.Explore.fc1113b4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Explore.fc1113b4.js",
+        "objectSize": 6796,
+        "ttfb_ms": 42,
+        "load_ms": 43,
+        "responseCode": 200,
+        "download_start": 4698,
+        "download_end": 4699,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 55,
+        "url": "\/responsive-web\/web\/bundle.ExploreTopics.34729c44.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.ExploreTopics.34729c44.js",
+        "objectSize": 5245,
+        "ttfb_ms": 39,
+        "load_ms": 41,
+        "responseCode": 200,
+        "download_start": 4752,
+        "download_end": 4754,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 56,
+        "url": "\/responsive-web\/web\/bundle.FollowerRequests.e3e61354.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.FollowerRequests.e3e61354.js",
+        "objectSize": 3276,
+        "ttfb_ms": 35,
+        "load_ms": 36,
+        "responseCode": 200,
+        "download_start": 4802,
+        "download_end": 4803,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 57,
+        "url": "\/responsive-web\/web\/bundle.GifSearch.2f7f8524.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.GifSearch.2f7f8524.js",
+        "objectSize": 6763,
+        "ttfb_ms": 43,
+        "load_ms": 44,
+        "responseCode": 200,
+        "download_start": 4859,
+        "download_end": 4860,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 58,
+        "url": "\/responsive-web\/web\/bundle.HomeTimeline.712d26a4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.HomeTimeline.712d26a4.js",
+        "objectSize": 7542,
+        "ttfb_ms": 40,
+        "load_ms": 45,
+        "responseCode": 200,
+        "download_start": 4914,
+        "download_end": 4919,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 59,
+        "url": "\/responsive-web\/web\/bundle.KeyboardShortcuts.b59cfa64.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.KeyboardShortcuts.b59cfa64.js",
+        "objectSize": 1398,
+        "ttfb_ms": 32,
+        "load_ms": 33,
+        "responseCode": 200,
+        "download_start": 4972,
+        "download_end": 4973,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 60,
+        "url": "\/responsive-web\/web\/bundle.LiveEvent.4c7e4e64.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.LiveEvent.4c7e4e64.js",
+        "objectSize": 22753,
+        "ttfb_ms": 46,
+        "load_ms": 69,
+        "responseCode": 200,
+        "download_start": 5028,
+        "download_end": 5051,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 61,
+        "url": "\/responsive-web\/web\/bundle.Login.ce0d27a4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Login.ce0d27a4.js",
+        "objectSize": 5625,
+        "ttfb_ms": 33,
+        "load_ms": 41,
+        "responseCode": 200,
+        "download_start": 5122,
+        "download_end": 5130,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 62,
+        "url": "\/responsive-web\/web\/bundle.Logout.a225f9f4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Logout.a225f9f4.js",
+        "objectSize": 1345,
+        "ttfb_ms": 32,
+        "load_ms": 34,
+        "responseCode": 200,
+        "download_start": 5173,
+        "download_end": 5175,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "",
+        "mimeType": "Unknown",
+        "id": 63,
+        "url": "\/1.1\/jot\/client_event.json",
+        "host": "api.twitter.com",
+        "full_url": "https:\/\/api.twitter.com\/1.1\/jot\/client_event.json",
+        "objectSize": 0,
+        "ttfb_ms": 81,
+        "load_ms": 81,
+        "responseCode": 200,
+        "download_start": 5269,
+        "download_end": 5269,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/web\/main.d4843a24.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "api.twitter.com",
+            "category": "Unknown"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 64,
+        "url": "\/responsive-web\/web\/bundle.Moment.5c7f5064.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Moment.5c7f5064.js",
+        "objectSize": 6683,
+        "ttfb_ms": 43,
+        "load_ms": 52,
+        "responseCode": 200,
+        "download_start": 5234,
+        "download_end": 5243,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 65,
+        "url": "\/responsive-web\/web\/bundle.MultiAccount.cc157704.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.MultiAccount.cc157704.js",
+        "objectSize": 3429,
+        "ttfb_ms": 34,
+        "load_ms": 38,
+        "responseCode": 200,
+        "download_start": 5295,
+        "download_end": 5299,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 66,
+        "url": "\/responsive-web\/web\/bundle.NewsCameraCapsule.0278f824.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.NewsCameraCapsule.0278f824.js",
+        "objectSize": 8155,
+        "ttfb_ms": 33,
+        "load_ms": 45,
+        "responseCode": 200,
+        "download_start": 5354,
+        "download_end": 5366,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 67,
+        "url": "\/responsive-web\/web\/bundle.NotificationDetail.f5873034.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.NotificationDetail.f5873034.js",
+        "objectSize": 1551,
+        "ttfb_ms": 34,
+        "load_ms": 36,
+        "responseCode": 200,
+        "download_start": 5416,
+        "download_end": 5418,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 68,
+        "url": "\/responsive-web\/web\/bundle.Notifications.31480154.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Notifications.31480154.js",
+        "objectSize": 7841,
+        "ttfb_ms": 40,
+        "load_ms": 44,
+        "responseCode": 200,
+        "download_start": 5472,
+        "download_end": 5476,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 69,
+        "url": "\/responsive-web\/web\/bundle.Ocf.2b1e0294.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Ocf.2b1e0294.js",
+        "objectSize": 54305,
+        "ttfb_ms": 38,
+        "load_ms": 125,
+        "responseCode": 200,
+        "download_start": 5528,
+        "download_end": 5615,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 70,
+        "url": "\/responsive-web\/web\/bundle.Place.6d6c7fc4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Place.6d6c7fc4.js",
+        "objectSize": 15923,
+        "ttfb_ms": 46,
+        "load_ms": 59,
+        "responseCode": 200,
+        "download_start": 5717,
+        "download_end": 5730,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 71,
+        "url": "\/responsive-web\/web\/bundle.ProfileRedirect.b8e16a24.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.ProfileRedirect.b8e16a24.js",
+        "objectSize": 576,
+        "ttfb_ms": 32,
+        "load_ms": 33,
+        "responseCode": 200,
+        "download_start": 5782,
+        "download_end": 5783,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 72,
+        "url": "\/responsive-web\/web\/bundle.Report.ba493f84.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Report.ba493f84.js",
+        "objectSize": 4752,
+        "ttfb_ms": 39,
+        "load_ms": 40,
+        "responseCode": 200,
+        "download_start": 5831,
+        "download_end": 5832,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 73,
+        "url": "\/responsive-web\/web\/bundle.RichTextCompose.7da92604.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.RichTextCompose.7da92604.js",
+        "objectSize": 95982,
+        "ttfb_ms": 41,
+        "load_ms": 193,
+        "responseCode": 200,
+        "download_start": 5885,
+        "download_end": 6037,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 74,
+        "url": "\/responsive-web\/web\/bundle.Search.91c74d94.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Search.91c74d94.js",
+        "objectSize": 13007,
+        "ttfb_ms": 47,
+        "load_ms": 55,
+        "responseCode": 200,
+        "download_start": 6176,
+        "download_end": 6184,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 75,
+        "url": "\/responsive-web\/web\/bundle.Settings.d191ea94.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Settings.d191ea94.js",
+        "objectSize": 10882,
+        "ttfb_ms": 33,
+        "load_ms": 50,
+        "responseCode": 200,
+        "download_start": 6234,
+        "download_end": 6251,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 76,
+        "url": "\/responsive-web\/web\/bundle.SettingsInternals.eaa4d554.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.SettingsInternals.eaa4d554.js",
+        "objectSize": 3356,
+        "ttfb_ms": 37,
+        "load_ms": 38,
+        "responseCode": 200,
+        "download_start": 6307,
+        "download_end": 6308,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 77,
+        "url": "\/responsive-web\/web\/bundle.SettingsProfile.f4cdc954.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.SettingsProfile.f4cdc954.js",
+        "objectSize": 11697,
+        "ttfb_ms": 53,
+        "load_ms": 54,
+        "responseCode": 200,
+        "download_start": 6370,
+        "download_end": 6371,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 78,
+        "url": "\/responsive-web\/web\/bundle.SettingsTransparency.04e11a94.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.SettingsTransparency.04e11a94.js",
+        "objectSize": 13416,
+        "ttfb_ms": 32,
+        "load_ms": 53,
+        "responseCode": 200,
+        "download_start": 6420,
+        "download_end": 6441,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 79,
+        "url": "\/responsive-web\/web\/bundle.SmsLogin.ea15f9a4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.SmsLogin.ea15f9a4.js",
+        "objectSize": 1911,
+        "ttfb_ms": 35,
+        "load_ms": 36,
+        "responseCode": 200,
+        "download_start": 6498,
+        "download_end": 6499,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 80,
+        "url": "\/responsive-web\/web\/bundle.Topics.f0387274.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Topics.f0387274.js",
+        "objectSize": 3233,
+        "ttfb_ms": 35,
+        "load_ms": 39,
+        "responseCode": 200,
+        "download_start": 6544,
+        "download_end": 6548,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 81,
+        "url": "\/responsive-web\/web\/bundle.Trends.4c89ed64.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Trends.4c89ed64.js",
+        "objectSize": 3578,
+        "ttfb_ms": 31,
+        "load_ms": 35,
+        "responseCode": 200,
+        "download_start": 6591,
+        "download_end": 6595,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 82,
+        "url": "\/responsive-web\/web\/bundle.TweetActivity.ce796c14.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.TweetActivity.ce796c14.js",
+        "objectSize": 1298,
+        "ttfb_ms": 34,
+        "load_ms": 35,
+        "responseCode": 200,
+        "download_start": 6640,
+        "download_end": 6641,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 83,
+        "url": "\/responsive-web\/web\/bundle.TweetMediaDetail.73ac3dc4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.TweetMediaDetail.73ac3dc4.js",
+        "objectSize": 6505,
+        "ttfb_ms": 44,
+        "load_ms": 47,
+        "responseCode": 200,
+        "download_start": 6693,
+        "download_end": 6696,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 84,
+        "url": "\/responsive-web\/web\/bundle.TweetMediaTags.6c533a64.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.TweetMediaTags.6c533a64.js",
+        "objectSize": 1309,
+        "ttfb_ms": 33,
+        "load_ms": 34,
+        "responseCode": 200,
+        "download_start": 6747,
+        "download_end": 6748,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 85,
+        "url": "\/responsive-web\/web\/bundle.Twitterversary.2a1a06e4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.Twitterversary.2a1a06e4.js",
+        "objectSize": 1183,
+        "ttfb_ms": 33,
+        "load_ms": 35,
+        "responseCode": 200,
+        "download_start": 6793,
+        "download_end": 6795,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 86,
+        "url": "\/responsive-web\/web\/bundle.UserAvatar.09c52ec4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.UserAvatar.09c52ec4.js",
+        "objectSize": 1442,
+        "ttfb_ms": 34,
+        "load_ms": 35,
+        "responseCode": 200,
+        "download_start": 6840,
+        "download_end": 6841,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 87,
+        "url": "\/responsive-web\/web\/bundle.UserFollowLists.42b55494.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.UserFollowLists.42b55494.js",
+        "objectSize": 4649,
+        "ttfb_ms": 39,
+        "load_ms": 42,
+        "responseCode": 200,
+        "download_start": 6889,
+        "download_end": 6892,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 88,
+        "url": "\/responsive-web\/web\/bundle.UserHeader.ce625b64.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.UserHeader.ce625b64.js",
+        "objectSize": 1410,
+        "ttfb_ms": 32,
+        "load_ms": 33,
+        "responseCode": 200,
+        "download_start": 6938,
+        "download_end": 6939,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 89,
+        "url": "\/responsive-web\/web\/bundle.UserLists.16194c74.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.UserLists.16194c74.js",
+        "objectSize": 18075,
+        "ttfb_ms": 39,
+        "load_ms": 61,
+        "responseCode": 200,
+        "download_start": 6994,
+        "download_end": 7016,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 90,
+        "url": "\/responsive-web\/web\/bundle.UserMoments.bc3633f4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.UserMoments.bc3633f4.js",
+        "objectSize": 5111,
+        "ttfb_ms": 35,
+        "load_ms": 42,
+        "responseCode": 200,
+        "download_start": 7076,
+        "download_end": 7083,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 91,
+        "url": "\/responsive-web\/web\/bundle.UserProfile.f753b154.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.UserProfile.f753b154.js",
+        "objectSize": 18323,
+        "ttfb_ms": 37,
+        "load_ms": 62,
+        "responseCode": 200,
+        "download_start": 7131,
+        "download_end": 7156,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 92,
+        "url": "\/responsive-web\/web\/bundle.UserProfileTimelines.8a735024.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.UserProfileTimelines.8a735024.js",
+        "objectSize": 2396,
+        "ttfb_ms": 36,
+        "load_ms": 38,
+        "responseCode": 200,
+        "download_start": 7214,
+        "download_end": 7216,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 93,
+        "url": "\/responsive-web\/web\/bundle.UserRedirect.6205f684.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/bundle.UserRedirect.6205f684.js",
+        "objectSize": 1298,
+        "ttfb_ms": 34,
+        "load_ms": 35,
+        "responseCode": 200,
+        "download_start": 7264,
+        "download_end": 7265,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 94,
+        "url": "\/responsive-web\/web\/loader.AbsolutePower.86dcba54.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.AbsolutePower.86dcba54.js",
+        "objectSize": 5128,
+        "ttfb_ms": 39,
+        "load_ms": 40,
+        "responseCode": 200,
+        "download_start": 7353,
+        "download_end": 7354,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 95,
+        "url": "\/responsive-web\/web\/loader.DashMenu.9bb836b4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.DashMenu.9bb836b4.js",
+        "objectSize": 12623,
+        "ttfb_ms": 43,
+        "load_ms": 55,
+        "responseCode": 200,
+        "download_start": 7430,
+        "download_end": 7442,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 96,
+        "url": "\/responsive-web\/web\/loader.DelightSidebarWelcomePrompt.cc4e0da4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.DelightSidebarWelcomePrompt.cc4e0da4.js",
+        "objectSize": 977,
+        "ttfb_ms": 34,
+        "load_ms": 35,
+        "responseCode": 200,
+        "download_start": 7492,
+        "download_end": 7493,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 97,
+        "url": "\/responsive-web\/web\/loader.ExploreSidebar.12864ad4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.ExploreSidebar.12864ad4.js",
+        "objectSize": 4557,
+        "ttfb_ms": 37,
+        "load_ms": 38,
+        "responseCode": 200,
+        "download_start": 7540,
+        "download_end": 7541,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 98,
+        "url": "\/responsive-web\/web\/loader.FeedbackSheet.fc945b24.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.FeedbackSheet.fc945b24.js",
+        "objectSize": 1207,
+        "ttfb_ms": 32,
+        "load_ms": 33,
+        "responseCode": 200,
+        "download_start": 7586,
+        "download_end": 7587,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 99,
+        "url": "\/responsive-web\/web\/loader.FeedbackTombstone.acebd0e4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.FeedbackTombstone.acebd0e4.js",
+        "objectSize": 1203,
+        "ttfb_ms": 31,
+        "load_ms": 33,
+        "responseCode": 200,
+        "download_start": 7627,
+        "download_end": 7629,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 100,
+        "url": "\/responsive-web\/web\/loader.HWCard.34936d84.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.HWCard.34936d84.js",
+        "objectSize": 22099,
+        "ttfb_ms": 32,
+        "load_ms": 67,
+        "responseCode": 200,
+        "download_start": 7670,
+        "download_end": 7705,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 101,
+        "url": "\/responsive-web\/web\/loader.NewTweetsPill.9e40b3d4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.NewTweetsPill.9e40b3d4.js",
+        "objectSize": 2809,
+        "ttfb_ms": 38,
+        "load_ms": 39,
+        "responseCode": 200,
+        "download_start": 7779,
+        "download_end": 7780,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 102,
+        "url": "\/responsive-web\/web\/loader.NewsCamera.25319e44.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.NewsCamera.25319e44.js",
+        "objectSize": 496,
+        "ttfb_ms": 31,
+        "load_ms": 32,
+        "responseCode": 200,
+        "download_start": 7821,
+        "download_end": 7822,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 103,
+        "url": "\/responsive-web\/web\/loader.PeriscopeOverlay.1c750c94.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.PeriscopeOverlay.1c750c94.js",
+        "objectSize": 2322,
+        "ttfb_ms": 33,
+        "load_ms": 35,
+        "responseCode": 200,
+        "download_start": 7866,
+        "download_end": 7868,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 104,
+        "url": "\/responsive-web\/web\/loader.ProfileClusterFollow.c1143034.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.ProfileClusterFollow.c1143034.js",
+        "objectSize": 2198,
+        "ttfb_ms": 35,
+        "load_ms": 37,
+        "responseCode": 200,
+        "download_start": 7912,
+        "download_end": 7914,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 105,
+        "url": "\/responsive-web\/web\/loader.PushNotificationsPrompt.b0213f64.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.PushNotificationsPrompt.b0213f64.js",
+        "objectSize": 1455,
+        "ttfb_ms": 54,
+        "load_ms": 55,
+        "responseCode": 200,
+        "download_start": 7980,
+        "download_end": 7981,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 106,
+        "url": "\/responsive-web\/web\/loader.SideNav.394c7424.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.SideNav.394c7424.js",
+        "objectSize": 4655,
+        "ttfb_ms": 32,
+        "load_ms": 37,
+        "responseCode": 200,
+        "download_start": 8022,
+        "download_end": 8027,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 107,
+        "url": "\/responsive-web\/web\/loader.SignupModule.945897a4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.SignupModule.945897a4.js",
+        "objectSize": 922,
+        "ttfb_ms": 35,
+        "load_ms": 36,
+        "responseCode": 200,
+        "download_start": 8073,
+        "download_end": 8074,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 108,
+        "url": "\/responsive-web\/web\/loader.TimelineGap.b9331854.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.TimelineGap.b9331854.js",
+        "objectSize": 650,
+        "ttfb_ms": 33,
+        "load_ms": 34,
+        "responseCode": 200,
+        "download_start": 8118,
+        "download_end": 8119,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 109,
+        "url": "\/responsive-web\/web\/loader.TimelineRenderer.8553a9b4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.TimelineRenderer.8553a9b4.js",
+        "objectSize": 6489,
+        "ttfb_ms": 41,
+        "load_ms": 50,
+        "responseCode": 200,
+        "download_start": 8173,
+        "download_end": 8182,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 110,
+        "url": "\/responsive-web\/web\/loader.TweetCurationActionMenu.bc27cb94.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.TweetCurationActionMenu.bc27cb94.js",
+        "objectSize": 9663,
+        "ttfb_ms": 43,
+        "load_ms": 47,
+        "responseCode": 200,
+        "download_start": 8237,
+        "download_end": 8241,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 111,
+        "url": "\/responsive-web\/web\/loader.TweetPhotos.354210d4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.TweetPhotos.354210d4.js",
+        "objectSize": 1902,
+        "ttfb_ms": 35,
+        "load_ms": 36,
+        "responseCode": 200,
+        "download_start": 8291,
+        "download_end": 8292,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 112,
+        "url": "\/responsive-web\/web\/loader.WideLayout.abba97e4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.WideLayout.abba97e4.js",
+        "objectSize": 5540,
+        "ttfb_ms": 35,
+        "load_ms": 42,
+        "responseCode": 200,
+        "download_start": 8369,
+        "download_end": 8376,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 113,
+        "url": "\/responsive-web\/web\/loader.directMessagesData.3ce20ae4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.directMessagesData.3ce20ae4.js",
+        "objectSize": 973,
+        "ttfb_ms": 35,
+        "load_ms": 36,
+        "responseCode": 200,
+        "download_start": 8422,
+        "download_end": 8423,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 114,
+        "url": "\/responsive-web\/web\/loader.graphQLDarkReads.92759024.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/loader.graphQLDarkReads.92759024.js",
+        "objectSize": 1725,
+        "ttfb_ms": 36,
+        "load_ms": 37,
+        "responseCode": 200,
+        "download_start": 8470,
+        "download_end": 8471,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 115,
+        "url": "\/responsive-web\/web\/vendors~ondemand.EmojiPicker.97df1ce4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/vendors~ondemand.EmojiPicker.97df1ce4.js",
+        "objectSize": 4577,
+        "ttfb_ms": 39,
+        "load_ms": 40,
+        "responseCode": 200,
+        "download_start": 8741,
+        "download_end": 8742,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 116,
+        "url": "\/responsive-web\/web\/vendors~ondemand.PlayerBase.db4f3104.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/vendors~ondemand.PlayerBase.db4f3104.js",
+        "objectSize": 2734,
+        "ttfb_ms": 32,
+        "load_ms": 35,
+        "responseCode": 200,
+        "download_start": 8787,
+        "download_end": 8790,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 117,
+        "url": "\/responsive-web\/web\/vendors~ondemand.PlayerUi.a67fc604.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/vendors~ondemand.PlayerUi.a67fc604.js",
+        "objectSize": 51078,
+        "ttfb_ms": 36,
+        "load_ms": 120,
+        "responseCode": 200,
+        "download_start": 8837,
+        "download_end": 8921,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 118,
+        "url": "\/responsive-web\/web\/vendors~ondemand.TweetDeckRichTextCompose.4cde46b4.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/vendors~ondemand.TweetDeckRichTextCompose.4cde46b4.js",
+        "objectSize": 5726,
+        "ttfb_ms": 31,
+        "load_ms": 39,
+        "responseCode": 200,
+        "download_start": 9007,
+        "download_end": 9015,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    },
+    {
+        "contentType": "application\/javascript",
+        "mimeType": "Javascript",
+        "id": 119,
+        "url": "\/responsive-web\/web\/raven.daf037c2ff239577e0a37894ac58d2dc.js",
+        "host": "abs.twimg.com",
+        "full_url": "https:\/\/abs.twimg.com\/responsive-web\/web\/raven.daf037c2ff239577e0a37894ac58d2dc.js",
+        "objectSize": 13791,
+        "ttfb_ms": 32,
+        "load_ms": 54,
+        "responseCode": 200,
+        "download_start": 9060,
+        "download_end": 9082,
+        "initiator": {
+            "url": "https:\/\/abs.twimg.com\/responsive-web\/serviceworker\/main.1cafa7b4.js",
+            "type": "script"
+        },
+        "thirdparty": {
+            "name": "Twitter",
+            "company": "Twitter",
+            "category": "Social"
+        }
+    }
+]
 export const  yahoo = [
     {
         "contentType": "text\/html",

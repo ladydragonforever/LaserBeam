@@ -319,7 +319,7 @@ const text = svg2.append('g')
             return d.level === 1 ? 1 : 0
     }) 
     .attr('dx', d => {
-        return d.level === 1 ? -6 : 0
+        return d.level === 1 ? -6 : 6
     })
     .attr('dy', 2)
     .attr('fill', 'red')
@@ -429,7 +429,7 @@ function getHighlightNodeOpacity(node, neighbors) {
 
 }
 function getHighlightTextOpacity(node, neighbors) {
-    if (node.id == neighbors[0]) {
+    if (node.level === 1) {
         return 1;
     }
 

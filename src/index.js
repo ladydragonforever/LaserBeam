@@ -110,15 +110,14 @@ const selectAllFilter = () => {
             document.getElementById(`${company}`).checked = false;
         }
         selectButton[0].value = "Select All";
-        // filteredInput = {}
-        // console.log(filteredInput)
     }
 }
 const updateAll = () => {
     console.log(selectButton[0].value)
     let newVisibility = selectButton[0].value === "Unselect" ? "visible" : "hidden"
     d3.selectAll("line").attr("visibility", function(d) {return newVisibility})
-    d3.selectAll("circle").attr("visibility", d => {return newVisibility})     
+    d3.selectAll("circle").attr("visibility", d => {return newVisibility})
+    d3.selectAll('text').attr('visibility', d=> {return newVisibility})     
 }
 // add eventlistner for the selectAll button
 selectButton[0].addEventListener('click', selectAllFilter)
@@ -139,6 +138,15 @@ const updateData = (company) => {
                     return d3.select(this).attr("visibility")
                 }
             });        
+        d3.selectAll("text").attr("visibility",
+
+            function (d) {
+                if (d.groups.includes(company)) {
+                    return newVisibility;
+                } else {
+                    return d3.select(this).attr("visibility")
+                }
+            }); 
         d3.selectAll("circle").attr("visibility",
             function (d) {
                 if (!d.groups.includes(company)) { 
@@ -211,9 +219,6 @@ const dataNodes = {
 }
 
 
-
-
-
 // create a bar chart
 // to change the data
 const dataset = [80, 100, 56, 120, 180, 30, 40, 120, 160];
@@ -258,37 +263,22 @@ const nodes = dataNodes.nodes.map(d => Object.create(d));
 const simulation = d3.forceSimulation(nodes)
     .force("link", d3.forceLink(links).id(d => d.id))
     .force("charge", d3.forceManyBody().strength(-50))
-    //.force("center", d3.forceCenter(netWidth/20, netHeight/20))
     .force("center", d3.forceCenter(netWidth/2, netHeight/2))
     .force("x", d3.forceX())
     .force("y", d3.forceY());
 
 const svg2 = d3.select('#network-graph').append('svg')
-    // .attr('viewBox', [-netWidth/3, -netHeight/1.5, netWidth, netHeight])
     .attr('viewBox', [0, 0, netWidth, netHeight])
 
-const link = svg2.append('g')
-    //   .attr("stroke", "#999")
-    //   .attr("stroke-opacity", 0.6)
-    .selectAll("line")
-      .data(links)
-    .join("line")
-      .attr("stroke-width", d => Math.sqrt(d.value))
-      .attr('stroke', "gray")
 
-    //   console.log("link", link)
-// const node = svg2.selectAll('g')
-//     .data(nodes)
-//     .append('g')
-//     .attr('transform', function(d){
-//         return "translate("+d.x+".80"
-//     })
-// const circle = node.append("circle")
-//     .attr("r", getNodeSize)
-//     .attr('fill', getNodeColor)
-// node.append("text")
-//     .attr("dx", function(d){return -20})
-//     .text(function(d){return d.name})
+const link = svg2.append('g')
+    .selectAll("line")
+    .data(links)
+    .join("line")
+    .attr('opacity', 0.5)
+    .attr("stroke-width", d => Math.sqrt(d.value))
+    .attr('stroke', "gray")
+
 const node = svg2.append("g")
     .attr("class", "g_main")
       .attr("stroke", "#fff")
@@ -298,39 +288,26 @@ const node = svg2.append("g")
     .enter().append('circle')
       .attr("r", getNodeSize)
       .attr('fill', getNodeColor)
+      .attr('opacity', 0.5)
       
-    // .on('click', function (d, i) {
-    //     console.log("clicking on", this);
-    //     // transition the clicked element
-    //     // to have a radius of 20
+    // .on('mouseover', function (d, i) {
+    //     const mouseNode = d3.select(this);
+       
+    //     d3.selectAll('text').attr('opacity', d=> {
+        
+    //         return d.level===1 ? 1 : 0
+    //     })
+       
+    // })
+    // .on('mouseout', function(d) {
+      
+    //     d3.selectAll('text').attr('opacity', 0);
     //     d3.select(this)
     //         .transition()
-    //         .attr('r', 20);
-    // })
-    .on('mouseover', function (d, i) {
-        const mouseNode = d3.select(this);
-        // console.log("mousenode",mouseNode.parent)
-        d3.selectAll("circle").style('opacity', getOpacity);
-        d3.selectAll('text').style('opacity', d=> {
-        
-            return d.level===1 ? 1 : 0
-        })
-        mouseNode
-            .transition()
-            .text()
-           
-            .attr('opacity', 1);
-    })
-    .on('mouseout', function(d) {
-        d3.selectAll("circle").style('opacity', 1);
-        d3.selectAll('text').style('opacity', 0);
-        d3.select(this)
-            .transition()
-           
-            .attr('opacity', 1)
-    })
-    
-    ;
+
+    // });
+
+
    
 const text = svg2.append('g')
     .selectAll('text')
@@ -338,28 +315,14 @@ const text = svg2.append('g')
     .enter().append('text')
     .text(getName)
     .attr('font-size', 5)
-    .attr('opacity', 0)
+    .attr('opacity', function (d, i) {
+            return d.level === 1 ? 1 : 0
+    }) 
     .attr('dx', d => {
         return d.level === 1 ? -6 : 0
     })
     .attr('dy', 2)
-    .attr('fill', 'green')
-    // .on('click', function (d, i) {
-    //     d3.select(this)
-    //         .transition()
-    //         .attr('r', 20);
-    // })
-    // .on('mouseover', function (d, i) {
-    //     console.log(this);
-    //     d3.select(this)
-    //         .transition()
-    //         .attr('opacity', 1);
-    // })
-    // .on('mouseout', function (d, i) {
-    //     d3.select(this)
-    //         .transition()
-    //         .attr('opacity', 0);
-    // });
+    .attr('fill', 'red')
 
     
 let margin = 20;
@@ -387,19 +350,6 @@ simulation.on("tick", () => {
         .attr("y2", d => keepInBoxY(d.target.y));
 
     node
-        // .attr("cx", function (d) {
-        //     if(d.x < 0) 
-        //         return 0;
-        //     if(d.x > netWidth)
-        //         return netWidth;
-        //     return d.x
-
-        //     console.log(d);
-        //     return Math.max(radius, Math.min(netWidth - radius, d.x)); 
-        // })
-        // .attr("cy", function (d) { return d.y = Math.max(radius, Math.min(netHeight - radius, d.y)); })
-        // .attr("cx", d => d.x)
-        // .attr("cy", d => d.y)
 
         .attr("cx", d => keepInBoxX(d.x))
         .attr("cy", d => keepInBoxY(d.y))
@@ -438,7 +388,6 @@ function getNeighbors(node) {
             if (el.source.id === node.id) {
                 neighbors.push(el.target.id)
             } 
-            // console.log("neighbors", neighbors)
             return neighbors
             
         },[node.id])
@@ -451,13 +400,14 @@ function isNeighborLink(node, link) {
     return link.target.id === node.id || link.source.id === node.id
 }
 
+
 function getHighlightNodeColor(node, neighbors){
     if(node.id == neighbors[0]){
-        return 'red';
+        return '#0ff';
     }
    
     if(neighbors.indexOf(node.id) !== -1) {
-        return "red"
+        return "#0ff"
     } else {
         return "gray"
     }
@@ -465,25 +415,63 @@ function getHighlightNodeColor(node, neighbors){
    
 }
 
+function getHighlightNodeOpacity(node, neighbors) {
+    if (node.id == neighbors[0]) {
+        return 1;
+    }
+
+    if (neighbors.indexOf(node.id) !== -1) {
+        return 1
+    } else {
+        return 0.5
+    }
+
+
+}
+function getHighlightTextOpacity(node, neighbors) {
+    if (node.id == neighbors[0]) {
+        return 1;
+    }
+
+    if (neighbors.indexOf(node.id) !== -1) {
+        return 1
+    } else {
+        return 0
+    }
+
+
+}
+
 function getHightlightLinkColor(node, link) {
-    return isNeighborLink(node, link) ? "red" : "gray"
+    return isNeighborLink(node, link) ? "#0ff" : "gray"
+}
+
+function getHighlightLinkOpacity(node, link) {
+    return isNeighborLink(node, link) ? 1 : 0.5
 }
 
 function selectNode(selectedNode) {
     d3.select(this)
     .transition()
-    .attr('fill', "red")
-
-    // const neighborNodes = node.filter( node => getNeighbors(selectedNode).includes(node.id));
+        .attr('fill', "#0ff")
     const neighbors = getNeighbors(selectedNode)
     
 
     node
     .transition()
     .attr('fill', d => getHighlightNodeColor(d, neighbors))
+    .attr('opacity', d => getHighlightNodeOpacity(d, neighbors))
+
+    
 
     link
+    .transition()
     .attr('stroke', d=> getHightlightLinkColor(selectedNode, d))
+    .attr('opacity', d=> getHighlightLinkOpacity(selectedNode, d))
+
+    text
+    .transition()
+    .attr('opacity', d=> getHighlightTextOpacity(d, neighbors))
 }
 
 node.on('click', selectNode)

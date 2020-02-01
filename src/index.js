@@ -178,9 +178,9 @@ const selectAllFilter = () => {
 const updateAll = () => {
     console.log(selectButton[0].value)
     let newVisibility = selectButton[0].value === "Unselect" ? "visible" : "hidden"
-    d3.selectAll("line").attr("visibility", function(d) {return newVisibility})
+    d3.selectAll("line").attr("visibility", function(d) {if (d.source) return newVisibility})
     d3.selectAll("circle").attr("visibility", d => {return newVisibility})
-    d3.selectAll('text').attr('visibility', d=> {return newVisibility})     
+    d3.selectAll('text').attr('visibility', d=> {if (d.level) return newVisibility})     
 }
 // add eventlistner for the selectAll button
 selectButton[0].addEventListener('click', selectAllFilter)
@@ -510,7 +510,7 @@ svg.append('text')
     .attr('x', width / 2 + margin)
     .attr('y', 40)
     .attr('text-anchor', 'middle')
-    .text('Third-party tracker numbers on popular websites')
+    .text('Third-party tracker numbers on popular websites (Hover on the Bar)')
 
 svg.append('text')
     .attr('class', 'source')

@@ -7,8 +7,7 @@ html {
 
 h1 {
   color: #F0F2EF;
-  font-family: 'helvetica neue';
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 200;
 }
 
@@ -17,43 +16,7 @@ h1 {
   justify-content: space-around;
 }
 
-.welcome {
-  font-weight: 400;
-  margin-top: 100px;
-}
-
-/*  Phase 4: Slide In & Out Classes */
-
-.align-left {
-  float: left;
-  margin-right: 20px;
-}
-
-.align-right {
-  float: right;
-  margin-left: 20px;
-}
-
-.slide {
-  opacity: 0;
-  transition: all .5s;
-}
-
-.align-left.slide {
-  transform: translateX(-30%) scale(0.95);
-}
-
-.align-right.slide {
-  transform: translateX(30%) scale(0.95);
-}
-
-.slide.active {
-  opacity: 1;
-  transform: translateX(0%) scale(1);
-}
-
 .wrapper {
-    background-color: white ;
     display: block;
     margin: auto;
     width: 75%;
@@ -63,14 +26,27 @@ h1 {
 }   
 #title {
   color: white;
-  text-align: center;
-  font-family: 'helvetica neue';
+  /* text-align: center; */
+  margin-left: 200px;
+  font-size: 30px;
 } 
 
-#filter {
-  color: black;
-}
+/* Filter */
 
+#filter {
+  color: white;
+}
+.filter-form {
+  display: flex;
+  justify-content: space-around;
+}
+lable {
+  display: block;
+}
+.select-all {
+  color:black;
+}
+/* Barchart */
 #barChart {
   margin-top: 20px;
   color: white;
@@ -90,4 +66,69 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+div#container {
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+}
+
+svg#bar-chart {
+  width: 100%;
+  height: 100%;
+}
+
+.bar {
+  fill: #80cbc4;
+}
+
+#container text{
+  font-size: 12px;
+  fill: #fff;
+}
+
+path {
+  stroke: gray;
+}
+
+#container line {
+  stroke: gray;
+}
+
+line#limit {
+  stroke: #FED966;
+  stroke-width: 3;
+  stroke-dasharray: 3 6;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.grid .tick line {
+  stroke: #9FAAAE;
+  stroke-opacity: 0.3;
+}
+
+#container text.value {
+  font-size: 14px;
+}
+
+#container text.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#container text.label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#container text.source {
+  font-size: 10px;
+}
+
+#container text.value {
+  font-size: 14px;
 }

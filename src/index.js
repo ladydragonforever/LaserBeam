@@ -195,6 +195,7 @@ const updateData = (company) => {
         d3.selectAll("line").attr("visibility",
         
             function (d) {
+                if (d.source === undefined) return d3.select(this).attr("visibility");
                 if (d.source.name === company) {
                     return newVisibility;
                 } else {
@@ -204,6 +205,7 @@ const updateData = (company) => {
         d3.selectAll("text").attr("visibility",
 
             function (d) {
+                if (d === undefined || d.groups === undefined) return d3.select(this).attr("visibility");
                 if (d.groups.includes(company)) {
                     return newVisibility;
                 } else {
@@ -212,6 +214,7 @@ const updateData = (company) => {
             }); 
         d3.selectAll("circle").attr("visibility",
             function (d) {
+                if (d.groups === undefined) return d3.select(this).attr("visibility");
                 if (!d.groups.includes(company)) { 
                     return d3.select(this).attr("visibility"); 
                 } else {    
@@ -226,9 +229,6 @@ for (const checkbox of checkboxes) {
 }
 
 
-
-// console.log(filteredInput)
-    // 
 let mergedNodes = {};
 
 
@@ -330,38 +330,198 @@ const dataNodes = {
     
 }
 
-
 // create a bar chart
-// to change the data
-const dataset = [80, 100, 56, 120, 180, 30, 40, 120, 160];
+const googleTrackers = googleDataLinks.length;
+const cnnTrackers = cnnDataLinks.length;
+const yahooTrackers = yahooDataLinks.length;
+const twitterTrackers = twitterDataLinks.length;
+const CBSTrackers = CBSDataLinks.length;
+const FacebookTrackers = FacebookDataLinks.length;
+const amazonTrackers = amazonDataLinks.length;
+const NYTrackers = NYDataLinks.length;
+const youtubeTrackers = youtubeDataLinks.length;
+const appacademyTrackers = appacademyDataLinks.length;
 
-const svgWidth = 500, svgHeight = 300, barPadding = 5;
-const barWidth = (svgWidth / dataset.length);
+const sample = [ 
+                    {
+                        Company: "Google",
+                        Number: googleTrackers
+                    }, 
+                    {
+                        Company: "CNN",
+                        Number: cnnTrackers
+                    },
+                    {
+                        Company: "Yahoo",
+                        Number: yahooTrackers
+                    },
+                    {
+                        Company: "Twitter",
+                        Number: twitterTrackers
+                    },
+                    {
+                        Company: "CBS",
+                        Number: CBSTrackers
+                    },
+                    {
+                        Company: "Facebook",
+                        Number: FacebookTrackers
+                    },
+                    {
+                        Company: "Amazon",
+                        Number: amazonTrackers,
+                    },
+                    {
+                        Company: "NYTimes",
+                        Number: NYTrackers
+                    },
+                    {
+                        Company: "Youtube",
+                        Number: youtubeTrackers
+                    },
+                    {
+                        Company: "AppAcademy",
+                        Number: appacademyTrackers
+                    }
+];
 
+const svg = d3.select('svg');
+const svgContainer = d3.select('#container');
 
-const svg1 = d3.select('#barChart').append('svg')
-    .attr("width", svgWidth)
-    .attr("height", svgHeight);
+const margin = 80;
+const width = 1000 - 2 * margin;
+const height = 600 - 2 * margin;
 
-const barChart = svg1.append('g')
-    .selectAll("rect")
-    .data(dataset)
+const chart = svg.append('g')
+    .attr('transform', `translate(${margin}, ${margin})`);
+
+const xScale = d3.scaleBand()
+    .range([0, width])
+    .domain(sample.map((s) => s.Company))
+    .padding(0.4)
+
+const yScale = d3.scaleLinear()
+    .range([height, 0])
+    .domain([0, 120]);
+
+// vertical grid lines
+// const makeXLines = () => d3.axisBottom()
+//   .scale(xScale)
+
+const makeYLines = () => d3.axisLeft()
+    .scale(yScale)
+
+chart.append('g')
+    .attr('transform', `translate(0, ${height})`)
+    .call(d3.axisBottom(xScale));
+
+chart.append('g')
+    .call(d3.axisLeft(yScale));
+
+chart.append('g')
+    .attr('class', 'grid')
+    .call(makeYLines()
+        .tickSize(-width, 0, 0)
+        .tickFormat('')
+    )
+
+const barGroups = chart.selectAll()
+    .data(sample)
     .enter()
-    .append("rect")
-    .attr("y", function (d) {
-        return svgHeight - d
+    .append('g')
+
+barGroups
+    .append('rect')
+    .attr('class', 'bar')
+    .attr('x', (g) => xScale(g.Company))
+    .attr('y', (g) => yScale(g.Number))
+    .attr('height', (g) => height - yScale(g.Number))
+    .attr('width', xScale.bandwidth())
+    .on('mouseenter', function (actual, i) {
+        d3.selectAll('.Number')
+            .attr('opacity', 0)
+
+        d3.select(this)
+            .transition()
+            .duration(300)
+            .attr('opacity', 0.6)
+            .attr('x', (a) => xScale(a.Company) - 5)
+            .attr('width', xScale.bandwidth() + 10)
+
+        const y = yScale(actual.Number)
+
+        const line = chart.append('line')
+            .attr('id', 'limit')
+            .attr('x1', 0)
+            .attr('y1', y)
+            .attr('x2', width)
+            .attr('y2', y)
+
+        barGroups.append('text')
+            .attr('class', 'divergence')
+            .attr('x', (a) => xScale(a.Company) + xScale.bandwidth() / 2)
+            .attr('y', (a) => yScale(a.Number) + 30)
+            .attr('fill', 'white')
+            .attr('text-anchor', 'middle')
+          
+
     })
-    .attr("height", function (d) {
-        return d;
+    .on('mouseleave', function () {
+        d3.selectAll('.value')
+            .attr('opacity', 1)
+
+        d3.select(this)
+            .transition()
+            .duration(300)
+            .attr('opacity', 1)
+            .attr('x', (a) => xScale(a.Company))
+            .attr('width', xScale.bandwidth())
+
+        chart.selectAll('#limit').remove()
+        chart.selectAll('.divergence').remove()
     })
-    .attr("width", barWidth - barPadding)
-    .attr("transform", function (d, i) {
-        var translate = [barWidth * i, 0];
-        return "translate(" + translate + ")";
-    });
+
+barGroups
+    .append('text')
+    .attr('class', 'value')
+    .attr('x', (a) => xScale(a.Company) + xScale.bandwidth() / 2)
+    .attr('y', (a) => yScale(a.Number) - 2)
+    .attr('text-anchor', 'middle')
+    .text((a) => a.Number)
+
+svg
+    .append('text')
+    .attr('class', 'label')
+    .attr('x', -(height / 2) - margin)
+    .attr('y', margin / 2.4)
+    .attr('transform', 'rotate(-90)')
+    .attr('text-anchor', 'middle')
+    .text('Number of trackers')
+
+svg.append('text')
+    .attr('class', 'label')
+    .attr('x', width / 2 + margin)
+    .attr('y', height + margin * 1.7)
+    .attr('text-anchor', 'middle')
+    .text('Languages')
+
+svg.append('text')
+    .attr('class', 'title')
+    .attr('x', width / 2 + margin)
+    .attr('y', 40)
+    .attr('text-anchor', 'middle')
+    .text('Third-party tracker numbers on popular websites')
+
+svg.append('text')
+    .attr('class', 'source')
+    .attr('x', width - margin / 2)
+    .attr('y', height + margin * 1.7)
+    .attr('text-anchor', 'start')
+    .text('Source: PrivacyEye & Request Map')
+
+
 
 //create a network graph
-// need to add the links manually
 
 const netWidth = 500, netHeight = 400; 
 
@@ -374,7 +534,7 @@ const nodes = dataNodes.nodes.map(d => Object.create(d));
 
 const simulation = d3.forceSimulation(nodes)
     .force("link", d3.forceLink(links).id(d => d.id))
-    .force("charge", d3.forceManyBody().strength(-50))
+    .force("charge", d3.forceManyBody().strength(-60))
     .force("center", d3.forceCenter(netWidth/2, netHeight/2))
     .force("x", d3.forceX())
     .force("y", d3.forceY());
@@ -437,20 +597,20 @@ const text = svg2.append('g')
     .attr('fill', 'red')
 
     
-let margin = 20;
+let margin1 = 20;
 function keepInBoxX(x, radius=0){
-    if (x < 0 + margin)
-        return 0 + margin;
-    if (x > netWidth - margin)
-        return netWidth - margin;
+    if (x < 0 + margin1)
+        return 0 + margin1;
+    if (x > netWidth - margin1)
+        return netWidth - margin1;
     return x
 }
 
 function keepInBoxY(y, radius=0){
-    if (y < 0+ margin)
-        return 0 + margin;
-    if (y > netHeight - margin)
-        return netHeight - margin;
+    if (y < 0+ margin1)
+        return 0 + margin1;
+    if (y > netHeight - margin1)
+        return netHeight - margin1;
     return y
 }
 
@@ -601,8 +761,8 @@ node
         const mouseNode = d3.select(this);
 
         d3.selectAll('text').attr('opacity', d=> {
-
-            return d.level===1 ? 1 : 0
+            if (d===undefined) return 1;
+            return d.level===1 || d.level === undefined ? 1 : 0
         })
 
     })

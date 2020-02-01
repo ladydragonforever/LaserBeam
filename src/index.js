@@ -1,5 +1,5 @@
 // import htmlGenerator from "./test.js";
-import {cnn, google, yahoo} from "./data";
+import { cnn, google, yahoo, Twitter, CBSSports, facebook, amazon, nyTimes, youtube, appacademy} from "./data";
 
 
 //helper functions 
@@ -48,11 +48,74 @@ const yahooDataLinks = yahooData.map(data => ({
     target: data
 }));
 
+// twitter
+const twitterData = [...new Set(transformData(Twitter))];
+
+const twitterDataLinks = twitterData.map(data => ({
+    source: "TwitterHost",
+    target: data
+}));
+
+// CBSSports
+
+const CBSData = [...new Set(transformData(CBSSports))];
+const CBSDataLinks = CBSData.map(data => ({
+    source: "CBS",
+    target: data
+}));
+
+// Facebook
+const FacebookData = [...new Set(transformData(facebook))];
+const FacebookDataLinks = FacebookData.map(data => ({
+    source: "FacebookHost",
+    target: data
+}));
+// console.log(FacebookDataLinks)
+
+// Amazon
+const amazonData = [...new Set(transformData(amazon))];
+const amazonDataLinks = amazonData.map(data => ({
+    source: "AmazonHost",
+    target: data
+}));
+
+// NYTimes
+const NYData = [...new Set(transformData(nyTimes))];
+const NYDataLinks = NYData.map(data => ({
+    source: "NYHost",
+    target: data
+}));
+
+// youtube
+const youtubeData = [...new Set(transformData(youtube))];
+const youtubeDataLinks = youtubeData.map(data => ({
+    source: "YoutubeHost",
+    target: data
+}));
+
+// appacademy
+const appacademyData = [...new Set(transformData(appacademy))];
+const appacademyDataLinks = appacademyData.map(data => ({
+    source: "AppAcademyHost",
+    target: data
+}));
+
+
 let inputNodes = {
     "Google": googleData,
     "CNN": cnnData,
     "Yahoo": yahooData,
+    "Twitter": twitterData,
+    "CBS": CBSData,
+    "Facebook": FacebookData,
+    "Amazon": amazonData,
+    "NYTimes": NYData,
+    "Youtube": youtubeData,
+    "AppAcademy": appacademyData
 }
+
+// console.log(twitterData, twitterDataLinks)
+// console.log(yahooData, yahooDataLinks)
 const companies = Object.keys(inputNodes);
 
 // filter
@@ -206,13 +269,62 @@ const dataNodes = {
             level: 1,
             groups: ["Yahoo"]
         },
+        {
+            id: "TwitterHost",
+            name: "Twitter",
+            level: 1,
+            groups: ["Twitter"]
+        },
+        {
+            id: "CBS",
+            name: "CBS",
+            level: 1,
+            groups: ["CBS"]
+        },
+        {
+            id: "FacebookHost",
+            name: "Facebook",
+            level: 1,
+            groups: ["Facebook"]
+        }, 
+        {
+            id: "AmazonHost",
+            name: "Amazon",
+            level: 1,
+            groups: ["Amazon"]
+        }, 
+        {
+            id: "NYHost",
+            name: "NYTimes",
+            level: 1,
+            groups: ["NYTimes"]
+        },  
+        {
+            id: "YoutubeHost",
+            name: "Youtube",
+            level: 1,
+            groups: ["Youtube"]
+        }, 
+        {
+            id: "AppAcademyHost",
+            name: "AppAcademy",
+            level: 1,
+            groups: ["AppAcademy"]
+        },
         ...mergedDataNodes
 
     ],
     links: [
         ...googleDataLinks,
         ...cnnDataLinks,
-        ...yahooDataLinks
+        ...yahooDataLinks,
+        ...twitterDataLinks,
+        ...CBSDataLinks,
+        ...FacebookDataLinks,
+        ...amazonDataLinks,
+        ...NYDataLinks,
+        ...youtubeDataLinks,
+        ...appacademyDataLinks
    
     ]
     
@@ -251,7 +363,7 @@ const barChart = svg1.append('g')
 //create a network graph
 // need to add the links manually
 
-const netWidth = 500, netHeight = 300; 
+const netWidth = 500, netHeight = 400; 
 
 const links = dataNodes.links.map(d => Object.create(d));
 
@@ -355,8 +467,8 @@ simulation.on("tick", () => {
         .attr("cy", d => keepInBoxY(d.y))
        
     text
-        .attr("x", node => node.x)
-        .attr("y", node => node.y);    
+        .attr("x", node => keepInBoxX(node.x))
+        .attr("y", node => keepInBoxY(node.y));    
 });
 
 // drag and drop
@@ -402,10 +514,12 @@ function isNeighborLink(node, link) {
 
 
 function getHighlightNodeColor(node, neighbors){
+    if (neighbors === undefined) return "gray";
     if(node.id == neighbors[0]){
         return '#0ff';
     }
    
+
     if(neighbors.indexOf(node.id) !== -1) {
         return "#0ff"
     } else {
@@ -416,6 +530,7 @@ function getHighlightNodeColor(node, neighbors){
 }
 
 function getHighlightNodeOpacity(node, neighbors) {
+    if (neighbors === undefined) return 0.5;
     if (node.id == neighbors[0]) {
         return 1;
     }
@@ -432,7 +547,7 @@ function getHighlightTextOpacity(node, neighbors) {
     if (node.level === 1) {
         return 1;
     }
-
+    if (neighbors === undefined) return 0;
     if (neighbors.indexOf(node.id) !== -1) {
         return 1
     } else {
@@ -469,10 +584,25 @@ function selectNode(selectedNode) {
     .attr('stroke', d=> getHightlightLinkColor(selectedNode, d))
     .attr('opacity', d=> getHighlightLinkOpacity(selectedNode, d))
 
+}
+function selectText(selectedNode) {
+    
+    const neighbors = getNeighbors(selectedNode)
+
     text
     .transition()
     .attr('opacity', d=> getHighlightTextOpacity(d, neighbors))
 }
 
-node.on('click', selectNode)
+node
+.on('click', selectNode)
+.on('mouseover', selectText)
+.on('mouseout', function (d, i) {
+        const mouseNode = d3.select(this);
 
+        d3.selectAll('text').attr('opacity', d=> {
+
+            return d.level===1 ? 1 : 0
+        })
+
+    })

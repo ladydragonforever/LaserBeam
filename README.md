@@ -1,7 +1,7 @@
 # LaserBeam
 
 
-[live](https://ladydragonforever.github.io/LaserBeam/page.html)
+[live version](https://ladydragonforever.github.io/LaserBeam/page.html)
 
 
 ## Background

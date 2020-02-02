@@ -1,5 +1,8 @@
 # LaserBeam
 
+(live)[https://ladydragonforever.github.io/LaserBeam/page.html]
+
+
 ## Background
 
 LazerBeam is a data visualization project showing the third party requests on the websites we are visiting.

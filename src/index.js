@@ -567,7 +567,7 @@ const node = svg2.append("g")
        
     //     d3.selectAll('text').attr('opacity', d=> {
         
-    //         return d.level===1 ? 1 : 0
+    //         return d.name=== mouseNode.name ? 1 : 0
     //     })
        
     // })
@@ -595,6 +595,9 @@ const text = svg2.append('g')
     })
     .attr('dy', 2)
     .attr('fill', 'red')
+    // .on('mouseover', function (d, i) {
+    //    attr('opacity', 1)
+    //     })
 
     
 let margin1 = 20;
@@ -704,7 +707,7 @@ function getHighlightNodeOpacity(node, neighbors) {
 
 }
 function getHighlightTextOpacity(node, neighbors) {
-    if (node.level === 1) {
+    if (node.level === 1 ) {
         return 1;
     }
     if (neighbors === undefined) return 0;
@@ -746,7 +749,7 @@ function selectNode(selectedNode) {
 
 }
 function selectText(selectedNode) {
-    
+      
     const neighbors = getNeighbors(selectedNode)
 
     text

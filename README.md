@@ -1,6 +1,7 @@
 # LaserBeam
 
-(live)[https://ladydragonforever.github.io/LaserBeam/page.html]
+
+[live](https://ladydragonforever.github.io/LaserBeam/page.html)
 
 
 ## Background

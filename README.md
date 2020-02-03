@@ -25,7 +25,7 @@ There are three MVPs:
  
 ## Highlights
   
-  - There are more than 45,000 data points imported for the project. I used the Set/Array/Hash as different data structures to clean the data and build nodes and links.
+  - There are more than 45,000 data points imported for the project. I used the Set/Array/Hash as different data structures to clean the data and build nodes and links Abstract Data Types.
   - I used the D3-force library and javascript for-loops to manipulate the nodes and links to make the interactive and dynamic Force-directed graphs.
 
 ![LaserBeam](https://i.makeagif.com/media/2-03-2020/CKUZ60.gif)

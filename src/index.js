@@ -503,7 +503,7 @@ svg.append('text')
     .attr('x', width / 2 + margin)
     .attr('y', height + margin * 1.7)
     .attr('text-anchor', 'middle')
-    .text('Languages')
+    .text('Websites')
 
 svg.append('text')
     .attr('class', 'title')

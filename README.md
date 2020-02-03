@@ -1,7 +1,7 @@
 # LaserBeam
 
 
-[live version](https://ladydragonforever.github.io/LaserBeam/page.html)
+[live site](https://ladydragonforever.github.io/LaserBeam/page.html)
 
 
 ## Background
@@ -12,15 +12,18 @@ The project is inspired from an open source project created by Mozilla in 2013 t
 
 ## Functionality and MVP
 
-With LazerBeam, users will be able to:
- * 1. visualize the net links of popular websites(showed by logo) with top ranked third parties
- * 2. the overall net graph is presented in 3D and can be dragged and tranform wth different angles
- * 3. when hover on each logo, you can see the company name and website address
- * 4. top ranked third parties will be presented in bubbles with different sizes
- * 5. when click on one third party bubble, you can see a fadig beam from the third party to all other linked websites
+There are three MVPs:
+- Filter: user can select and unselect any companies and see instant changes in the network graph; users can select or unselect all the companies by clicking on the "Select All/Unselect" button.
+- Network Graph: The center nodes represent the first party websites and the surronding nodes represent the third party trackers. The network graph is interactive. 
+  * Users can drag and drop the nodes and move the graph around
+  * while hovering on the center node, its linked third-party tracker names will appear
+  * while clicking on the center node, the website and its linked third-party trackers will light up - just like a laser beam!
+  * the nodes & links & texts of the network graph are contained in a SVG box with boudaries
+- Barchart: 
+  * The barchart represents the number of trackers on ten popular webistes we browse. 
+  * While hovering on the bar, a yellow line will apear and show the divergence.
  
- 
-## WireFrames
+## Highlights
   
   Here is a hight-level diagram of the final project that should look like:
   
@@ -28,14 +31,10 @@ With LazerBeam, users will be able to:
   
 ## Architecture and Technologies
  LaserBeam is a frontend Javascript project. The main technologies used are :
-  * Javacript
-  * D3
-  * HTML5
-  * CSS
+  * JavaScript
   
-## Implementation Timeline
-
-  D1: Collect all the data and learn about D3 documentation
-  D2: working on Feature 1&2&3
-  D3: working on Feature 4
-  D5: working on Feature 5
+  * D3
+  
+  * HTML5
+  
+  * CSS

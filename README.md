@@ -27,7 +27,8 @@ There are three MVPs:
   
   - There are more 45,000 data points imported for the project. I used the Set/Array/Hash as different data structures to format the data and build nodes and links.
   - I used the D3-force library and javascript for-loops to manipulate the nodes and links to make the interactive and dynamic Force-directed graphs.
-  ![LaserBeam](https://i.makeagif.com/media/2-03-2020/CKUZ60.gif)
+
+![LaserBeam](https://i.makeagif.com/media/2-03-2020/CKUZ60.gif)
   
 ## Architecture and Technologies
  LaserBeam is a frontend Javascript project. The main technologies used are :

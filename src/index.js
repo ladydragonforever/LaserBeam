@@ -8,7 +8,7 @@ function getNodeColor(node) {
 }
 
 function getNodeSize(node) {
-    return node.level === 1 ? "10" : "5"
+    return node.level === 1 ? "20" : "5"
 }
 
 function getName(node) {
@@ -587,11 +587,12 @@ const text = svg2.append('g')
     .enter().append('text')
     .text(getName)
     .attr('font-size', 5)
+    .attr('font-weight', 600)
     .attr('opacity', function (d, i) {
             return d.level === 1 ? 1 : 0
     }) 
     .attr('dx', d => {
-        return d.level === 1 ? -6 : 6
+        return d.level === 1 ? -8 : 6
     })
     .attr('dy', 2)
     .attr('fill', 'red')
@@ -759,13 +760,13 @@ function selectText(selectedNode) {
 
 node
 .on('click', selectNode)
-.on('mouseover', selectText)
-.on('mouseout', function (d, i) {
-        const mouseNode = d3.select(this);
+// .on('mouseover', selectText)
+// .on('mouseout', function (d, i) {
+//         const mouseNode = d3.select(this);
 
-        d3.selectAll('text').attr('opacity', d=> {
-            if (d===undefined) return 1;
-            return d.level===1 || d.level === undefined ? 1 : 0
-        })
+//         d3.selectAll('text').attr('opacity', d=> {
+//             if (d===undefined) return 1;
+//             return d.level===1 || d.level === undefined ? 1 : 0
+//         })
 
-    })
+//     })

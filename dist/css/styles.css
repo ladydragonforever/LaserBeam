@@ -32,6 +32,11 @@ h1 {
     letter-spacing: 1px;
     
 }
+.checkboxes {
+  font-size: 16px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", "Helvetica", sans-serif;
+  letter-spacing: 1px;
+}
 .wrapper {
     display: block;
     margin: auto;

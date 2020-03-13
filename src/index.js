@@ -733,6 +733,12 @@ function selectNode(selectedNode) {
     d3.select(this)
     .transition()
         .attr('fill', "#0ff")
+    
+
+    // d3.selectAll('text').attr('opacity', d=> {
+    //         console.log(d.name, selectedNode.name)
+    //         return d.name=== selectedNode.name ? 1 : 0
+    //     })
     const neighbors = getNeighbors(selectedNode)
     
 
@@ -760,13 +766,13 @@ function selectText(selectedNode) {
 
 node
 .on('click', selectNode)
-// .on('mouseover', selectText)
-// .on('mouseout', function (d, i) {
-//         const mouseNode = d3.select(this);
+.on('mouseover', selectText)
+.on('mouseout', function (d, i) {
+        const mouseNode = d3.select(this);
 
-//         d3.selectAll('text').attr('opacity', d=> {
-//             if (d===undefined) return 1;
-//             return d.level===1 || d.level === undefined ? 1 : 0
-//         })
+        d3.selectAll('text').attr('opacity', d=> {
+            if (d===undefined) return 1;
+            return d.level===1 || d.level === undefined ? 1 : 0
+        })
 
-//     })
+    })
